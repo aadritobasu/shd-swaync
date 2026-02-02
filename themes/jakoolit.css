@@ -2,7 +2,7 @@
 @define-color noti-bg rgba(0, 0, 0, 0.8);
 @define-color noti-bg-alt @background-alt;
 @define-color noti-bg-hover @background;
-@define-color text-color @foreground;
+@define-color text-color @on-surface;
 
 * {
     font-family: "JetBrains Mono Nerd Font";
@@ -26,7 +26,7 @@
 }
 
 .notification-content{
-	/*color: @text-color;*/
+	color: @text-color;
     background: @noti-bg;
     padding: 3px 10px 3px 6px;
     border-radius: 10px;
@@ -206,7 +206,7 @@
     margin: 5px;
     border-radius: 10px;
     font-size: 1rem;
-    color: @noti-border-color;
+    color: @text-color;
 }
 
 .widget-dnd>switch {
